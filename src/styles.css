@@ -6,3 +6,22 @@ body{
     margin-left: 5%;
     margin-right: 5%;
 }
+.common-form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+.form-input{
+    height: 35px;
+    margin-bottom: 20px;
+    border: 1px solid red;
+    padding-left: 15px;
+    color: red;
+}
+.form-button{
+    height: 35px;
+    border: 1px solid red;
+    color: red;
+    cursor: pointer;
+}
