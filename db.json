@@ -51,6 +51,23 @@
       "name": "Mardoqueu",
       "password": "123",
       "id": 10
+    },
+    {
+      "name": "Daniel Sousa",
+      "email": "daniel@gmail.com",
+      "password": "321",
+      "id": 11
+    },
+    {
+      "name": "Mardoqueu",
+      "password": "12345",
+      "id": 12
+    },
+    {
+      "name": "Mardoqueu",
+      "password": "12345",
+      "email": "valquiria1@gmail.com",
+      "id": 13
     }
   ]
 }
