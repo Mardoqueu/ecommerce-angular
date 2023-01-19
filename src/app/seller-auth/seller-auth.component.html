@@ -1,18 +1,34 @@
-<div class="seller-auth">
-    <div class="sign-up">
+<div  class="seller-auth">
+    <div *ngIf="!showLogin" class="sign-up">
         <h1>Seller Sign-up</h1>
         <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)" class="common-form">
             <input type="text" class="form-input" placeholder="Enter Name"
                 name="name"
-                ngModel>
+                [ngModel]>
             <input type="password" class="form-input" placeholder="Enter
                 Password" name="password"
-                ngModel>
+                [ngModel]>
             <input type="text" class="form-input" placeholder="Enter Email"
                 name="email"
-                ngModel>
+                [ngModel]>
             <button class="form-button"
-            ngModel>Sign up</button>
+            [ngModel]>Sign up</button>
+            <a class="auth-toggle-link" (click)="openLogin()">Already have account? Click here</a>
+        </form>
+    </div>
+
+    <div *ngIf="showLogin" class="login">
+        <h1>Seller Login</h1>
+        <form #sellerLogin="ngForm" (ngSubmit)="login(sellerLogin.value)" class="common-form">
+            <input type="text" class="form-input" placeholder="Enter Email"
+                name="email"
+                [ngModel]>
+            <input type="password" class="form-input" placeholder="Enter
+                Password" name="password"
+                [ngModel]>
+            <button class="form-button"
+            [ngModel]>Login</button>
+            <a class="auth-toggle-link" (click)="openSignUp()">Don't have account?</a>
         </form>
     </div>
 </div>
