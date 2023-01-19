@@ -47,3 +47,8 @@
     text-decoration: none;
     color:  red;
 }
+
+h1 a {
+    color: red;
+    text-decoration: none;
+}
