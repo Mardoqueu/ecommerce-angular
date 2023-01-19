@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./seller-auth.component.css'],
 })
 export class SellerAuthComponent implements OnInit {
+  showLogin=true
   constructor(private seller: SellerService) {}
 
   ngOnInit(): void {
@@ -16,5 +17,14 @@ export class SellerAuthComponent implements OnInit {
   signUp(data: signUp): void {
     console.warn(data);
     this.seller.userSignUp(data)
+  }
+  login(data: signUp): void {
+    console.warn(data);
+  }
+  openLogin(){
+    this.showLogin=true;
+  }
+  openSignUp(){
+    this.showLogin=false;
   }
 }
