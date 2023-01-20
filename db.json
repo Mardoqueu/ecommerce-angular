@@ -75,5 +75,25 @@
       "email": "sdfa21@gmail.com",
       "id": 14
     }
+  ],
+  "products": [
+    {
+      "name": "samgun 40",
+      "price": "500",
+      "category": "mobile",
+      "color": "black",
+      "description": "this is a description",
+      "image": "https://m.media-amazon.com/images/I/61XoUEP4bSL._AC_SL1280_.jpg",
+      "id": 1
+    },
+    {
+      "name": "iphone",
+      "price": "500",
+      "category": "mobile",
+      "color": "black",
+      "description": "description",
+      "image": "https://i.ebayimg.com/images/g/NRQAAOSwkbpa4bw9/s-l1600.jpg",
+      "id": 2
+    }
   ]
 }
