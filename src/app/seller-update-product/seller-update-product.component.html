@@ -5,24 +5,24 @@
         class="common-form">
         <input type="text" class="form-input" placeholder="Enter Product Name"
             name="name"
-            ngModel/>
+            ngModel="{{productData?.name}}"/>
         <input type="text" class="form-input" placeholder="Enter Product Price"
             name="price"
-            ngModel/>
+            ngModel="{{productData?.price}}"/>
         <input type="text" class="form-input" placeholder="Enter Product
             Category"
             name="category"
-            ngModel/>
+            ngModel="{{productData?.category}}"/>
         <input type="text" class="form-input" placeholder="Enter Product Color"
             name="color"
-            ngModel/>
+            ngModel="{{productData?.color}}"/>
         <textarea type="text" class="form-input" placeholder="Enter Product
             Description"
             name="description"
-            ngModel></textarea>
+            ngModel="{{productData?.description}}"></textarea>
         <input type="text" class="form-input" placeholder="Enter Product Image URL"
             name="image"
-            ngModel/>
+            ngModel="{{productData?.image}}"/>
             <button class="form-button"
             ngModel>Update Product</button>
     </form>
