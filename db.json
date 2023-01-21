@@ -112,6 +112,15 @@
       "description": "This is the description of the product",
       "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone14pro-digitalmat-gallery-1-202209_GEO_US?wid=364&hei=333&fmt=png-alpha&.v=1660830896184",
       "id": 4
+    },
+    {
+      "name": "Samsung",
+      "price": "100",
+      "color": "black",
+      "category": "mobile",
+      "description": "This is the description of the product",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone14pro-digitalmat-gallery-1-202209_GEO_US?wid=364&hei=333&fmt=png-alpha&.v=1660830896184",
+      "id": 5
     }
   ]
 }
