@@ -9,7 +9,8 @@ import { ProductService } from '../services/product.service';
   styleUrls: ['./seller-update-product.component.css']
 })
 export class SellerUpdateProductComponent implements OnInit {
-  productData:undefined|product
+  productData:undefined|product;
+  productMessage:undefined|string;
 
   constructor(private route:ActivatedRoute, private product:ProductService){}
 
@@ -23,7 +24,18 @@ export class SellerUpdateProductComponent implements OnInit {
   }
 
   submit(data:any){
-
+    if(this.productData){
+      data.id=this.productData.id;
+    }
+    this.product.updateProduct(data).subscribe((result)=>{
+      if(result){
+        this.productMessage="Product updated successfully"
+      }
+    })
+    setTimeout(()=>{
+      this.productMessage=undefined
+    })
+    console.warn(data);
   }
 
 }
