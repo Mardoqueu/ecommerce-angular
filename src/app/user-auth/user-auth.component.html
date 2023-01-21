@@ -1,4 +1,5 @@
 <div class="user-auth">
+   <div *ngIf="!showLogin" class="signup">
     <h1 class="user-auth">User Sign-up</h1>
     <form #userSignup="ngForm" class="common-form" (ngSubmit)="signUp(userSignup.value)">
         <input
@@ -23,5 +24,29 @@
             ngModel
         />
         <button class="form-button">Sign Up</button>
+        <p>Already have account? <a (click)="openLogin()">Click here</a></p>
     </form>
+   </div>
+
+   <div *ngIf="showLogin" class="login">
+    <h1 class="user-auth">User Login</h1>
+    <form #userLogin="ngForm" class="common-form" (ngSubmit)="login(userLogin.value)">
+        <input
+            type="text"
+            class="form-input"
+            placeholder="Enter User Email"
+            name="email"
+            ngModel
+        />
+        <input
+            type="password"
+            class="form-input"
+            placeholder="Enter User Password"
+            name="password"
+            ngModel
+        />
+        <button class="form-button">Login</button>
+        <p>Want to create a have account? <a (click)="openSignUp()">Click here</a></p>
+    </form>
+   </div>
 </div>
