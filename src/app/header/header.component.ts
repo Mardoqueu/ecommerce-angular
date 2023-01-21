@@ -48,4 +48,8 @@ export class HeaderComponent implements OnInit {
   hideSearch(){
     this.searchResult=undefined;
   }
+  submitSearch(value:string){
+    console.warn(value)
+    this.route.navigate([`search/${value}`])
+  }
 }
