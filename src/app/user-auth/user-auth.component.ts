@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { login, signUp } from '../data-type';
+import { cart, login, product, signUp } from '../data-type';
+import { ProductService } from '../services/product.service';
 import { UserService } from '../services/user.service';
 
 @Component({
@@ -10,7 +11,7 @@ import { UserService } from '../services/user.service';
 export class UserAuthComponent implements OnInit {
   showLogin:boolean=true;
   authError:string="";
-  constructor(private user: UserService){
+  constructor(private user: UserService, private product:ProductService){
 
   }
 
@@ -27,6 +28,8 @@ export class UserAuthComponent implements OnInit {
       console.warn(console);
       if(result){
         this.authError="User not found";
+      }else{
+        this.localCartToRemoteCart();
       }
       })
   }
@@ -35,6 +38,33 @@ export class UserAuthComponent implements OnInit {
   }
   openLogin(){
     this.showLogin=true;
+  }
+  localCartToRemoteCart(){
+    let data = localStorage.getItem('localCart');
+    if(data){
+      let cartDataList:product[]= JSON.parse(data);
+      let user = localStorage.getItem('user');
+      let userId = user && JSON.parse(user).id;
+      cartDataList.forEach((product:product, index)=>{
+        let cartData:cart={
+          ...product,
+          productId:product.id,
+          userId
+        }
+          delete cartData.id;
+          setTimeout(()=>{
+            this.product.addToCart(cartData).subscribe((result)=>{
+              if(result){
+                console.warn("data is stored");              
+              }
+            })
+          }, 500);
+          if(cartDataList.length===index+1){
+            localStorage.removeItem('localCart');
+          }
+      })
+    }
+    
   }
 
 }
