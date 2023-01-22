@@ -31,21 +31,32 @@
    <div *ngIf="showLogin" class="login">
     <h1 class="user-auth">User Login</h1>
     <form #userLogin="ngForm" class="common-form" (ngSubmit)="login(userLogin.value)">
+        <p class="error-p">{{authError}}</p>
         <input
             type="text"
             class="form-input"
             placeholder="Enter User Email"
             name="email"
             ngModel
+            email=""
+            #email="ngModel"
+            required
         />
+        <p class="invalid-input"><span *ngIf="email.invalid && email.touched">Please enter valid input</span></p>
         <input
             type="password"
             class="form-input"
             placeholder="Enter User Password"
             name="password"
             ngModel
+            minlength="2"
+            maxlength="20"
+            #password="ngModel"
+            required
         />
-        <button class="form-button">Login</button>
+        <p class="invalid-input"><span *ngIf="password.invalid && password.touched">Please enter valid input</span></p>
+
+        <button [disabled]="userLogin.invalid" class="form-button">Login</button>
         <p>Want to create a have account? <a (click)="openSignUp()">Click here</a></p>
     </form>
    </div>
