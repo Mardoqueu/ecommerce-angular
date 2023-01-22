@@ -230,6 +230,30 @@
       "productId": 1,
       "userId": 1,
       "id": 1
+    },
+    {
+      "name": "Iphone 124",
+      "price": "2000",
+      "color": "pink",
+      "category": "mobile",
+      "description": "This is the description of the product",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone14pro-digitalmat-gallery-1-202209_GEO_US?wid=364&hei=333&fmt=png-alpha&.v=1660830896184",
+      "quantity": 8,
+      "productId": 2,
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "name": "Iphone 124",
+      "price": "2000",
+      "color": "pink",
+      "category": "mobile",
+      "description": "This is the description of the product",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone14pro-digitalmat-gallery-1-202209_GEO_US?wid=364&hei=333&fmt=png-alpha&.v=1660830896184",
+      "quantity": 2,
+      "productId": 3,
+      "userId": 1,
+      "id": 3
     }
   ]
 }
