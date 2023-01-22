@@ -228,5 +228,31 @@
       "userId": 1,
       "id": 6
     }
+  ],
+  "orders": [
+    {
+      "email": "mdq767@gmail.com",
+      "address": "Rua 10, quadra B casa 612, 612",
+      "contact": "99981228992",
+      "totalPrice": 30200,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "email": "mdq767@gmail.com",
+      "address": "Rua 10, quadra B casa 612, 612",
+      "contact": "99981228992",
+      "totalPrice": 30200,
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "email": "mdq767@gmail.com",
+      "address": "Rua 10, quadra B casa 612, 612",
+      "contact": "99981228992",
+      "totalPrice": 30200,
+      "userId": 1,
+      "id": 3
+    }
   ]
 }
