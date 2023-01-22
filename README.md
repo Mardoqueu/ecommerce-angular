@@ -1,7 +1,10 @@
 
 # Projeto Ecommerce-Angular
 
-Fiz esse projeto para o bootcamp que estou participando
+Fiz esse projeto para o bootcamp que estou participando. Tempo de desenvolvimento do projeto:
+
+![image](https://user-images.githubusercontent.com/11077068/213944334-72b3b339-534f-47a4-b403-80a25928887e.png)
+
 
 
 ## FEATS
