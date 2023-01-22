@@ -121,6 +121,57 @@
       "description": "This is the description of the product",
       "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone14pro-digitalmat-gallery-1-202209_GEO_US?wid=364&hei=333&fmt=png-alpha&.v=1660830896184",
       "id": 5
+    },
+    {
+      "name": "Iphone 1995",
+      "price": "2000",
+      "category": "mobile",
+      "color": "pink",
+      "description": "This is the description of the product",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone14pro-digitalmat-gallery-1-202209_GEO_US?wid=364&hei=333&fmt=png-alpha&.v=1660830896184",
+      "quantity": 2,
+      "productId": 1,
+      "userId": {
+        "name": "Mardoqueu",
+        "email": "mardoqueu@gmail.com",
+        "password": "123",
+        "id": 1
+      },
+      "id": 6
+    },
+    {
+      "name": "Iphone 1995",
+      "price": "2000",
+      "category": "mobile",
+      "color": "pink",
+      "description": "This is the description of the product",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone14pro-digitalmat-gallery-1-202209_GEO_US?wid=364&hei=333&fmt=png-alpha&.v=1660830896184",
+      "quantity": 2,
+      "productId": 1,
+      "userId": {
+        "name": "Mardoqueu",
+        "email": "mardoqueu@gmail.com",
+        "password": "123",
+        "id": 1
+      },
+      "id": 7
+    },
+    {
+      "name": "Iphone 1995",
+      "price": "2000",
+      "category": "mobile",
+      "color": "pink",
+      "description": "This is the description of the product",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone14pro-digitalmat-gallery-1-202209_GEO_US?wid=364&hei=333&fmt=png-alpha&.v=1660830896184",
+      "quantity": 1,
+      "productId": 1,
+      "userId": {
+        "name": "Mardoqueu",
+        "email": "mardoqueu@gmail.com",
+        "password": "123",
+        "id": 1
+      },
+      "id": 8
     }
   ],
   "users": [
@@ -165,6 +216,20 @@
       "email": "mardoqueu@gmail.com",
       "password": "123",
       "id": 7
+    }
+  ],
+  "cart": [
+    {
+      "name": "Iphone 1995",
+      "price": "2000",
+      "category": "mobile",
+      "color": "pink",
+      "description": "This is the description of the product",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone14pro-digitalmat-gallery-1-202209_GEO_US?wid=364&hei=333&fmt=png-alpha&.v=1660830896184",
+      "quantity": 1,
+      "productId": 1,
+      "userId": 1,
+      "id": 1
     }
   ]
 }
