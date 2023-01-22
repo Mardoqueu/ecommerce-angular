@@ -90,5 +90,10 @@ export class ProductService {
   orderNow(data:order){
     return this.http.post('http://localhost:3000/orders',data);
   }
+  orderList(){
+    let userStore = localStorage.getItem('user');
+    let userData = userStore && JSON.parse(userStore);
+    return this.http.get<order[]>('http://localhost:3000/orders?userId=' + userData.id);
+  }
    
 }
