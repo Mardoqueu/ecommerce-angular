@@ -78,49 +78,76 @@
   ],
   "products": [
     {
-      "name": "Iphone 1995",
-      "price": "2000",
+      "name": "Apple Iphone 14 Plus",
+      "price": "899",
       "category": "mobile",
-      "color": "pink",
-      "description": "This is the description of the product",
-      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone14pro-digitalmat-gallery-1-202209_GEO_US?wid=364&hei=333&fmt=png-alpha&.v=1660830896184",
+      "color": "black",
+      "description": "The Apple iPhone 14 Plus is manufactured by US based Apple iPhone, announced on September 7, 2022",
+      "image": "https://www.mobile57.com/product_images/webp/apple-iphone-14-plus.webp",
       "id": 1
     },
     {
-      "name": "Iphone 124",
-      "price": "2000",
-      "color": "pink",
+      "name": "Apple Iphone 14 Pro Max",
+      "price": "1,099",
       "category": "mobile",
-      "description": "This is the description of the product",
-      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone14pro-digitalmat-gallery-1-202209_GEO_US?wid=364&hei=333&fmt=png-alpha&.v=1660830896184",
+      "color": "pink",
+      "description": "Apple iPhone 14 Pro Max is a new smartphone by Apple, the price of iPhone 14 Pro Max in USA is USD 1,099, ",
+      "image": "https://www.mobile57.com/product_images/webp/apple-iphone-14-pro-max_2.webp",
       "id": 2
     },
     {
-      "name": "Iphone 124",
-      "price": "2000",
-      "color": "pink",
+      "name": "Apple Iphone 14 Pro",
+      "price": "999",
       "category": "mobile",
-      "description": "This is the description of the product",
-      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone14pro-digitalmat-gallery-1-202209_GEO_US?wid=364&hei=333&fmt=png-alpha&.v=1660830896184",
+      "color": "White",
+      "description": "Apple iPhone 14 Pro is a new smartphone by Apple, the price of iPhone 14 Pro in USA is USD 999",
+      "image": "https://www.mobile57.com/product_images/webp/apple-iphone-14-pro.webp",
       "id": 3
     },
     {
-      "name": "Iphone 124",
-      "price": "2000",
-      "color": "pink",
+      "name": "Apple Iphone Se 2022",
+      "price": "429",
       "category": "mobile",
-      "description": "This is the description of the product",
-      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone14pro-digitalmat-gallery-1-202209_GEO_US?wid=364&hei=333&fmt=png-alpha&.v=1660830896184",
+      "color": "black",
+      "description": "Apple Iphone Se 2022 Price In USA 2023",
+      "image": "https://www.mobile57.com/product_images/webp/iPhone-SE-2022-official.webp",
       "id": 4
     },
     {
-      "name": "Samsung",
-      "price": "100",
-      "color": "black",
+      "name": "Apple Iphone 12 Pro",
+      "price": "999Price ",
       "category": "mobile",
-      "description": "This is the description of the product",
-      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone14pro-digitalmat-gallery-1-202209_GEO_US?wid=364&hei=333&fmt=png-alpha&.v=1660830896184",
+      "color": "red",
+      "description": "Apple iPhone 12 Pro is a newly introduced smartphone in October 2020 with the Price of 999 USD in USA",
+      "image": "https://www.mobile57.com/product_images/webp/iphone-12-pro-final.webp",
       "id": 5
+    },
+    {
+      "name": "Apple Iphone Xs Max",
+      "price": "999",
+      "category": "mobile",
+      "color": "White",
+      "description": "Apple iPhone XS Max is the latest iPhone with the Prices of 999 USD in USA,",
+      "image": "https://www.mobile57.com/product_images/moreimgs/webp/Apple-iPhone-XS-Max-Gold.webp",
+      "id": 6
+    },
+    {
+      "name": "Apple Iphone Xs",
+      "price": "899",
+      "category": "mobile",
+      "color": "black",
+      "description": "Apple iPhone XS is the latest iPhone with the Prices of 899 USD in USA, ",
+      "image": "https://www.mobile57.com/product_images/moreimgs/webp/Apple-iPhone-XS_1.webp",
+      "id": 7
+    },
+    {
+      "name": "Apple Iphone X Bentley Edition (256gb)",
+      "price": "2000",
+      "category": "mobile",
+      "color": "black",
+      "description": "Apple Iphone X Bentley Edition (256gb) Price In USA 2023",
+      "image": "https://www.mobile57.com/product_images/webp/Apple-iPhone_-x_-Bentley_-Edition.webp",
+      "id": 8
     }
   ],
   "users": [
@@ -184,6 +211,14 @@
       "totalPrice": 2300,
       "userId": 1,
       "id": 2
+    },
+    {
+      "email": "mdq767@gmail.com",
+      "address": "Rua 10, quadra B casa 612, 612",
+      "contact": "99981228992",
+      "totalPrice": 2100,
+      "userId": 1,
+      "id": 3
     }
   ]
 }
