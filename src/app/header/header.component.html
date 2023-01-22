@@ -21,15 +21,15 @@
             <li><a routerLink="/seller-auth">Seller</a></li>
             <li><a routerLink="">Home</a></li>
             <li><a routerLink="/user-auth">Login/Sign-up</a></li>
-            <li><a class="fas fa-cart-plus" routerLink="/my-orders"> ({{cartItems}})</a></li>
+            <li><a class="fas fa-cart-plus" [routerLink]="cartItems>0?'cart-page':null"> ({{cartItems}})</a></li>
         </ul>
         <ul *ngSwitchCase="'user'">
             <li><a class="nav-link scrollto" routerLink="/seller-auth">User</a></li>
             <li><a class="nav-link scrollto" routerLink="">Home</a></li>
-            <li><a class="nav-link scrollto">{{userName | titlecase}}</a></li>
+            <li><a class="nav-link scrollto" style="cursor: pointer;">{{userName | titlecase}}</a></li>
             <li><a class="nav-link scrollto" routerLink="/my-orders">My orders</a></li>
-            <li><a class="nav-link scrollto" (click)="userLogout()">Logout</a></li>
-            <li><a [routerLink]="cartItems>0?'cart-page':null">Cart({{cartItems}})</a></li>
+            <li><a class="nav-link scrollto" (click)="userLogout()" style="cursor: pointer;">Logout</a></li>
+            <li><a class="fas fa-cart-plus" [routerLink]="cartItems>0?'cart-page':null"> ({{cartItems}})</a></li>
         </ul>
         <ul *ngSwitchCase="'seller'">
             <li><a class="nav-link scrollto" routerLink="/seller-add-product">Add
