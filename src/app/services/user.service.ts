@@ -11,7 +11,7 @@ export class UserService {
   constructor(private http: HttpClient, private router:Router) { }
 
   userSingUp(user:signUp){
-    this.http.post('http://localhost:3000/users',user,{observe:'response'})
+    this.http.post('https://fake-product-api-mdq.herokuapp.com/users',user,{observe:'response'})
     .subscribe((result)=>{
       console.warn(result);
       if(result){
@@ -23,7 +23,7 @@ export class UserService {
   }
 
   userLogin(data:login){
-    this.http.get<signUp[]>(`http://localhost:3000/users?email=${data.email}&passowrd=${data.password}`, {
+    this.http.get<signUp[]>(`https://fake-product-api-mdq.herokuapp.com/users?email=${data.email}&passowrd=${data.password}`, {
       observe:'response'}
       ).subscribe((result)=>{
         if(result && result.body?.length){
