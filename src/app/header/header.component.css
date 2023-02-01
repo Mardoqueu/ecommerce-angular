@@ -1,9 +1,11 @@
-.nav{
+.nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
-.nav h1{
+.nav h1 {
     color: red;
     margin: 0;
     font-size: 40px;
@@ -12,23 +14,33 @@
 .nav .nav-search {
     flex: 1;
     display: flex;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5px;
+    align-items: center;
+    padding: 0 10px;
+    margin: 0 5%;
+    height: 39px;
+    border: 1px solid red;
+    border-radius: 20px;
 }
 
 .nav .nav-search input {
     flex: 1;
     color: red;
-    border: 1px solid red;
-    height: 39px;
-    border-right: none;
+    border: none;
+    height: 100%;
+    padding: 0 20px;
+    font-size: 14px;
+    border-radius: 20px 0 0 20px;
 }
 
 .nav .nav-search button {
+    height: 100%;
+    border: none;
     color: red;
-    border: 1px solid red;
-    height: 39px;
+    background-color: #fff;
+    border-radius: 0 20px 20px 0;
+    padding: 0 20px;
+    cursor: pointer;
+    font-size: 14px;
 }
 
 .nav ul {
@@ -40,12 +52,12 @@
 
 .nav ul li {
     padding: 15px;
-    padding-top: 15px;
 }
 
 .nav ul a {
     text-decoration: none;
     color:  red;
+    font-size: 14px;
 }
 
 h1 a {
@@ -61,14 +73,53 @@ h1 a {
     border: 1px solid #ddd;
     background-color: #fff;
     width: 300px;
+    border-radius: 10px;
 }
 
 .suggested-search li{
     padding: 5px;
-    border: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.suggested-search li:last-child {
+    border-bottom: none;
 }
 
 .suggested-search li a{
     cursor: pointer;
     color: red;
+    font-size: 14px;
 }
+
+/*================Media Queries==================*/
+
+@media only screen and (max-width: 480px) {
+    .nav h1 {
+        font-size: 30px;
+    }
+
+    .nav .nav-search input, .nav .nav-search button {
+        height: 30px;
+    }
+
+    .nav ul li {
+        padding: 10px;
+        padding-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .nav h1 {
+        font-size: 20px;
+    }
+
+    .nav .nav-search input, .nav .nav-search button {
+        height: 20px;
+    }
+
+    .nav ul li {
+        padding: 5px;
+        padding-top: 5px;
+    }
+}
+
