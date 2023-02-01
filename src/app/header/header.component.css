@@ -91,3 +91,35 @@ h1 a {
     font-size: 14px;
 }
 
+/*================Media Queries==================*/
+
+@media only screen and (max-width: 480px) {
+    .nav h1 {
+        font-size: 30px;
+    }
+
+    .nav .nav-search input, .nav .nav-search button {
+        height: 30px;
+    }
+
+    .nav ul li {
+        padding: 10px;
+        padding-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .nav h1 {
+        font-size: 20px;
+    }
+
+    .nav .nav-search input, .nav .nav-search button {
+        height: 20px;
+    }
+
+    .nav ul li {
+        padding: 5px;
+        padding-top: 5px;
+    }
+}
+
