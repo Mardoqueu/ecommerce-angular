@@ -18,7 +18,7 @@
     </div>
     <div [ngSwitch]="menuType">
         <ul *ngSwitchCase="'default'">
-            <li><a routerLink="/seller-auth">Seller</a></li>
+            <li><a routerLink="/seller-auth">Admin</a></li>
             <li><a routerLink="">Home</a></li>
             <li><a routerLink="/user-auth">Login/Sign-up</a></li>
             <li><a class="fas fa-cart-plus" [routerLink]="cartItems>0?'cart-page':null"> ({{cartItems}})</a></li>
