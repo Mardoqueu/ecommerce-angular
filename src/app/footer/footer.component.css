@@ -1,22 +1,37 @@
-ul{
+ul {
     margin: 0;
     padding: 0;
 }
+
 .footer {
     padding: 10px;
     text-align: center;
-    position: fixed;
     bottom: 0;
     right: 0;
     left: 0;
     background-color: #fff;
 }
-.footer ul{
+
+.footer ul {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
-.footer ul li a{
-    color: blueviolet;
+
+.footer ul li {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: red;
     text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .footer ul li {
+        flex-basis: auto;
+    }
 }
